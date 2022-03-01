@@ -55,6 +55,11 @@
         justify-content: space-between;
         padding: 8px 10px;
     }
+
+    .navbar a {
+        color: black;
+    }
+
     .navbar_menu {
         display: none;
         flex-direction: column;
