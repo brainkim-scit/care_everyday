@@ -1,4 +1,5 @@
 import '../../assets/css/navbar.css';
+import {Link, NavLink} from "react-router-dom";
 
 export const Header = () => {
 
@@ -19,7 +20,7 @@ export const Header = () => {
             </a>
 
             <ul className="navbar_menu">
-                <li>센서정보</li>
+                <NavLink to="/" ><li>센서정보</li></NavLink>
                 <li>스마트팜</li>
                 <li>일정표</li>
                 <li>후원하기</li>
