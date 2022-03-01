@@ -82,8 +82,8 @@
         display: block;
     }
 
-    .navbar_menu.active,
-    .navbar_links.active {
+    .navbar_menu.on,
+    .navbar_links.on {
         display: flex;
     }
 }

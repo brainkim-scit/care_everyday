@@ -1,13 +1,13 @@
 import '../../assets/css/navbar.css';
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 export const Header = () => {
 
     const toggleBtnEvent = (e) => {
         const menu = document.querySelector('.navbar_menu');
         const links = document.querySelector('.navbar_links');
-        menu.classList.toggle('active');
-        links.classList.toggle('active');
+        menu.classList.toggle('on');
+        links.classList.toggle('on');
         e.preventDefault();
     }
 
@@ -20,11 +20,11 @@ export const Header = () => {
             </a>
 
             <ul className="navbar_menu">
-                <NavLink to="/" ><li>센서정보</li></NavLink>
-                <li>스마트팜</li>
-                <li>일정표</li>
-                <li>후원하기</li>
-                <li>방명록</li>
+                <li><NavLink to="/info-sensor" >센서정보</NavLink></li>
+                <li><NavLink to="/smartFarm" >스마트팜</NavLink></li>
+                <li><NavLink to="/schedules" >일정표</NavLink></li>
+                <li><NavLink to="/donate" >후원하기</NavLink></li>
+                <li><NavLink to="/visitors" >방명록</NavLink></li>
             </ul>
 
             <ul className="navbar_links">
