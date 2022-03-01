@@ -1,0 +1,4 @@
+
+.cam {
+    width: calc(100% - 14px); border: solid 4px black; border-radius: 6px;
+}
